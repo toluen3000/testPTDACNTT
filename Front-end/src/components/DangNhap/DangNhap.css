@@ -1,0 +1,79 @@
+  .login-container {
+    width: 400px; /* Đặt kích thước cố định cho ô vuông */
+    height: 320px; /* Chiều cao bằng chiều rộng để tạo ô vuông */
+    margin: auto; /* Canh giữa theo chiều ngang */
+    position: absolute;
+    top: 50%; /* Canh giữa theo chiều dọc */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch chuyển chính xác đến giữa màn hình */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Thêm màu nền nhẹ */
+  }
+  
+  /* Form hiển thị dạng cột */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Khoảng cách và định dạng input */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  /* Hiển thị lỗi */
+  .login-error {
+    color: red;
+    font-size: 14px;
+    margin: 10px 0;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+  }
+  
+  /* Nút đăng nhập */
+  .login-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

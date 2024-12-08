@@ -1,0 +1,195 @@
+/* Container chính */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between; /* Distribute space between the two sections */
+}
+
+/* Thông tin bệnh nhân */
+.ttBenhNhan {
+  width: 40%; /* Set width to 40% */
+  padding-right: 20px; /* Add some padding between the two sections */
+}
+
+.ttBenhNhan h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ttBenhNhan p {
+  margin: 5px 0;
+}
+
+.ttBenhNhan hr {
+  margin-top: 15px;
+  border: 1px solid #ddd;
+}
+
+/* Thông tin bệnh án */
+.benhAnContent {
+  width: 58%; /* Set width to 60% (adjusted to fit within container) */
+}
+
+/* Nút thêm bệnh án */
+.addBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.addBtn:hover {
+  background-color: #45a049;
+}
+
+/* Danh sách bệnh án */
+.btnGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.editBtn {
+  background-color: #ffa500;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #ff8c00;
+}
+
+.deleteBtn:hover {
+  background-color: #d32f2f;
+}
+
+/* Form thêm bệnh án */
+.addForm,
+.editForm {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%; /* Full width within its parent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addForm h3,
+.editForm h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.addForm label,
+.editForm label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.addForm input,
+.editForm input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.addForm input[type="text"],
+.editForm input[type="text"] {
+  margin-bottom: 20px;
+}
+
+/* Nút Lưu và Hủy */
+.btnGroup {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.saveBtn,
+.cancelBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  width: 48%;
+}
+
+.saveBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.saveBtn:hover {
+  background-color: #45a049;
+}
+
+.cancelBtn:hover {
+  background-color: #d32f2f;
+}
+
+/* Hiệu ứng khi đang xử lý */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center; /* Stack the sections vertically on small screens */
+  }
+
+  .ttBenhNhan,
+  .benhAnContent {
+      width: 100%; /* Full width on smaller screens */
+      padding-right: 0;
+  }
+
+  .btnGroup {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .saveBtn,
+  .cancelBtn {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .addBtn {
+      width: 100%;
+      font-size: 14px;
+  }
+}
